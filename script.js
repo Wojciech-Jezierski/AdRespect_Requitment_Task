@@ -57,14 +57,17 @@ buttons.forEach(button => {
 
 //Masonry gallery
 document.addEventListener('DOMContentLoaded', function() {
-    var grid = document.querySelector('.grid');
+  var grid = document.querySelector('.grid');
+  
+  // Using imagesLoaded library to ensure images are loaded
+  imagesLoaded(grid, function() {
     var masonry = new Masonry(grid, {
       itemSelector: '.grid-item',
       columnWidth: '.grid-item',
       percentPosition: true
     });
   });
-
+});
 
 //Expand button in Masonry gallery
 const expandBtn = document.querySelector('.expand-button');
