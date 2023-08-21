@@ -56,26 +56,35 @@ buttons.forEach(button => {
 })
 
 //Masonry gallery
-document.addEventListener('DOMContentLoaded', function() {
+function initializeMasonry() {
   var grid = document.querySelector('.grid');
-  
-  // Using imagesLoaded library to ensure images are loaded
-  imagesLoaded(grid, function() {
-    var masonry = new Masonry(grid, {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-item',
-      percentPosition: true
-    });
+  var masonry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    percentPosition: true
   });
-});
+}
+
+// Call the initializeMasonry function when the DOM is ready
+document.addEventListener('DOMContentLoaded', initializeMasonry);
 
 //Expand button in Masonry gallery
-const expandBtn = document.querySelector('.expand-button');
-const gridItem = document.querySelector('.grid-item');
+document.addEventListener('DOMContentLoaded', function() {
+  const expandButton = document.querySelector('.expand-button');
+  const hiddenGridItems = document.querySelectorAll('.grid-item.hidden');
+  var grid = document.querySelector('.grid');
 
-expandBtn.addEventListener('click', () => {
-  gridItem.classList.remove('hidden');
-})
+  expandButton.addEventListener('click', function() {
+    hiddenGridItems.forEach(gridItem => {
+      grid.classList.remove('vanishing-section')
+      gridItem.classList.remove('hidden');
+      initializeMasonry();
+    });
+    
+    // Hide the "Rozwiń" button after expanding
+    expandButton.style.display = 'none';
+  });
+});
 
 //Lightbox gallery
 const lightbox = document.createElement('div')
