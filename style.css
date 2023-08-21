@@ -105,7 +105,7 @@ hr {
   width: 180px;
   height: 90px;
   z-index: 3;
-  bottom: 0;
+  bottom: -1px;
   right: 0;
 }
 
@@ -134,6 +134,63 @@ hr {
 
 .carousel-button.next {
   right: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .button-container {
+    width: 200px;
+    height: 110px;
+  }
+
+  .carousel-button {
+    top: 60px;
+  }
+
+  .carousel-button.prev {
+    right: 7rem;
+  }
+
+  .carousel-button.next {
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .button-container {
+    width: 230px;
+    height: 130px;
+  }
+
+  .carousel-button {
+    top: 63px;
+  }
+
+  .carousel-button.prev {
+    right: 9rem;
+  }
+
+  .carousel-button.next {
+    right: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button-container {
+    width: 230px;
+    height: 120px;
+  }
+
+  .carousel-button {
+    top: 60px;
+  }
+
+  .carousel-button.prev {
+    right: 8rem;
+  }
+
+  .carousel-button.next {
+    right: 3rem;
+  }
 }
 
 @media screen and (min-width: 1800px) {
