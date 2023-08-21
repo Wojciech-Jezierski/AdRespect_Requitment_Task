@@ -3,15 +3,23 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 const mobileMenuCloseButton = document.getElementById('mobile-menu-close-button');
 const body = document.querySelector('body');
+const offerBtn = document.querySelector('.offer');
+const dropDownList = document.querySelector('.drop-down-list');
 
 mobileMenuButton.addEventListener('click', () => {
   mobileMenuOverlay.classList.remove('hidden');
+  body.classList.add('overflow-hidden');
 });
 
 mobileMenuCloseButton.addEventListener('click', () => {
   mobileMenuOverlay.classList.add('hidden');
   mobileMenuOverlay.classList.add('disable-scroll');
+  body.classList.remove('overflow-hidden');
 });
+
+offerBtn.addEventListener('click', () => {
+  dropDownList.classList.toggle('hidden');
+})
 
 
 //Search input
