@@ -14,6 +14,12 @@ body {
   background-color: #f5f0ec;
 }
 
+.offer,
+.realizations {
+  color: #1b5b31;
+  font-size: 12px;
+}
+
 hr {
   height: 2px;
   margin: 20px 0;
