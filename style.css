@@ -1,0 +1,164 @@
+.hero {
+  background-color: #dcc1ab;
+}
+
+.main {
+  background-color: #f5f0ec;
+}
+
+hr {
+  height: 2px;
+  margin: 20px 0;
+}
+
+.gallery {
+  background-color: #dcc1ab;
+  height: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.01);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.expand-button {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background-color: none;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  outline: 1px solid black;
+  opacity: 100%;
+}
+
+.slide {
+  inset: 0;
+  display: none;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 400ms;
+}
+
+.slide[data-active] {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.button-container {
+  position: absolute;
+  background-color: #f5f0ec;
+  width: 180px;
+  height: 90px;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+}
+
+.carousel-button {
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  bottom: 2px;
+  transform: translateY(-50%);
+  color: black;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 1rem;
+  position: absolute;
+  top: 43px;
+}
+
+.carousel-button:focus {
+  outline: none;
+}
+
+.carousel-button.prev {
+  right: 6rem;
+}
+
+.carousel-button.next {
+  right: 2rem;
+}
+
+@media screen and (min-width: 1800px) {
+  .button-container {
+    width: 240px;
+    height: 130px;
+  }
+
+  .carousel-button {
+    top: 63px;
+  }
+
+  .carousel-button.prev {
+    right: 9rem;
+  }
+
+  .carousel-button.next {
+    right: 3rem;
+  }
+}
+
+.vanishing-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.vanishing-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%; /* Adjust the height as needed */
+  background: linear-gradient(to top, #dcc1ab, transparent);
+  z-index: 12;
+}
