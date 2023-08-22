@@ -24,12 +24,12 @@
 
     <nav class="text-black p-6 relative">
         <div class="flex justify-between items-center">
-          <div class="flex items-center ml-[9px]">
+          <div class="flex items-center pl-16">
             <img src="./images/Logo.png" >
           </div>
-          <div class="hidden md:flex space-x-12 mr-[8px]">
+          <div class="hidden md:flex space-x-11 mr-16">
             <div class="relative group">
-                <button class="hover:text-red-300 min-w-[85px]">Oferta <i class="fa-solid fa-sort-down absolute bottom-2 left-20"></i></button>
+                <button class="hover:text-red-300 min-w-[87px]">Oferta <i class="fa-solid fa-sort-down absolute bottom-2 right-0"></i></button>
                 <div class="absolute left-3 top-full w-full p-2 bg-slate-100 hidden group-hover:block rounded-xl z-10">
                   <a href="#" class="block px-1 py-2 text-black hover:bg-slate-200">Oferta 1</a>
                   <a href="#" class="block px-1 py-2 text-black hover:bg-slate-200">Oferta 2</a>
@@ -50,7 +50,7 @@
               </svg>
             </button>
           </div>
-          <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden" id="mobile-menu-overlay">
+          <div class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 hidden" id="mobile-menu-overlay">
             <div class="absolute top-0 right-0 p-4">
               <button class="text-white focus:outline-none" id="mobile-menu-close-button">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -60,7 +60,7 @@
             </div>
             <div class="flex flex-col text-[30px] items-center mt-36 space-y-8 z-20">
                 <div class="relative group">
-                  <button class="offer text-white">Oferta <i class="fa-solid fa-sort-down absolute bottom-3 left-24"></i></button>
+                  <button class="nav-offer text-white">Oferta <i class="fa-solid fa-sort-down absolute bottom-3 left-24"></i></button>
                   <div class="drop-down-list absolute left-0 top-full w-32 pl-2 bg-slate-100 rounded-xl hidden">
                     <a href="#" class="block px-1 py-2 text-black hover:bg-slate-100">Opcja 1</a>
                     <a href="#" class="block px-1 py-2 text-black hover:bg-slate-100">Opcja 2</a>
@@ -77,12 +77,12 @@
       <section id="header">
         <div class="flex flex-col lg:flex-row justify-between">
             <div class="hero flex w-full">
-                <div class="mt-14 ml-5 mr-2 xl:mt-36 xl:mx-8 xl:mx-14 xl:mr-4 2xl:mt-64">
+                <div class="pt-10 pl-14 pr-2 xl:pt-36 xl:mx-8 xl:mx-14 xl:pr-4 2xl:pt-64">
                     <h1 class="title text-[40px] md:text-[50px] xl:text-[60px] leading-none">Nowoczesna<br> aranżacja<br> Twojego ogrodu</h1>
-                    <p class="mt-14 md:mt-20">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-                    <div class="flex flex-col sm:flex-row justify-start mt-20 mb-14 xl:mt-[72px]">
-                        <button class="mr-[20px] md:mr-[35px] xl:mr-[50px] rounded-3xl bg-green-800 text-white w-[200px] lg:w-[230px] 2xl:w-[300px] h-[50px] hover:scale-110 transition-all duration-500">Skontaktuj się z nami</button>
-                        <button class="mt-10 sm:mt-0 w-[230px] xl:w-[244px] h-[50px] border border-green-700 rounded-3xl text-green-700 hover:scale-110 transition-all duration-500">Zobacz nasze realizacje <i class="fa-solid fa-arrow-down ml-1"></i></button>
+                    <p class="pt-14 md:pt-20 xl:pr-28">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług <br>z indywidualnym podejściem do każdego projektu.</p>
+                    <div class="flex flex-col sm:flex-row justify-start mt-20 mb-10 xl:mt-20">
+                        <button class="mr-[20px] md:mr-[35px] xl:mr-9 rounded-3xl bg-green-800 text-white w-[200px] lg:w-[230px] 2xl:w-[300px] h-[50px] hover:scale-110 transition-all duration-500">Skontaktuj się z nami</button>
+                        <button class="mt-8 sm:mt-0 w-[230px] xl:w-[244px] h-[50px] border border-green-700 rounded-3xl text-green-700 hover:scale-110 transition-all duration-500">Zobacz nasze realizacje <i class="fa-solid fa-arrow-down ml-1"></i></button>
                     </div>
                 </div>
             </div>
@@ -109,15 +109,15 @@
 
       <section id="offer" class="animate-fade-in">
         <div class="main w-full h-100%">
-            <div class="text-cotainer m-auto pt-10 md:pt-[112px] pl-[10px] md:ml-[25px]">
+            <div class="text-cotainer m-auto pt-10 md:pt-28 pl-2.5 md:ml-6 xl:ml-48">
                 <p class="offer">Oferta</p>
                 <div class="w-full h-100%">
-                <h1 class="text-[48px] pt-[16px]">Działamy kompleksowo</h1>    
-                <p class="mt-[32px]">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+                <h1 class="text-5xl pt-3.5">Działamy kompleksowo</h1>    
+                <p class="pt-8 xl:w-[718px]">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
             </div>
             </div>
-            <div class="flex flex-col lg:flex-row pt-20 xl:pt-[70px] justify-center items-center space-x-4 space-y-8 md:space-x-16 pb-10 xl:pb-14">
-                <div class="w-[320px] h-[350px] md:w-[378px] md:h-[370px] bg-slate-50 rounded-3xl relative mt-6">
+            <div class="flex flex-col lg:flex-row pt-20 xl:pt-14 justify-center items-center space-x-4 space-y-8 md:space-x-12 pb-10 xl:pb-40 2xl:space-x-36">
+                <div class="w-[320px] h-[350px] md:w-[378px] md:h-[370px] ml-4 md:ml-16 lg:ml-0 bg-slate-50 rounded-3xl relative mt-6">
                     <img src="./icons/Projekty.png" class="ml-[42px] mt-[48px]" />
                         <h2 class="text-[28px] mt-[28px] ml-[38px]">Projekty</h2>
                         <p class="text-[14px] pl-10 pr-10 pt-[12px]">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
@@ -141,22 +141,22 @@
 
       <section id="about" class="animate-fade-in">
         <div class="flex flex-col lg:flex-row w-full h-100%">
-            <div class="w-1/2 md:mx-auto">
-                <img src="./images//Image 2.png" class="w-full"/>
+            <div class="lg:w-1/2 mx-auto">
+                <img src="./images/AboutImg.png" class="w-full"/>
             </div>
             <div class="bg-green-900 flex-1">
-                <div class="xl:w-[596px] xl:h-[450px] 2xl:w-full pt-10 md:pt-[30px] xl:pt-[180px] pl-[92px] 2xl:pl-[200px] pr-[92px] text-slate-50">
-                    <p>O firmie</p>
-                    <h1 class="text-[48px]">Tworzymy z pasją</h1>
-                    <p class="mt-[40px] 2xl:mt-[80px]">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
-                    <button class="border border-slate-50 rounded-3xl p-3 mb-10 mt-10 md:mt-12 xl:mt-20 hover:scale-110 transition-all duration-500">Poznaj nas bliżej <i class="fa-solid fa-arrow-right ml-2"></i></button>
+                <div class="pt-10 pl-5 xl:pl-14 text-slate-50 xl:w-[596px] xl:h-[450px] 2xl:w-full md:pt-[30px] xl:pt-[135px] xl:pl-[160px] 2xl:pl-[200px] 2xl:pr-14 2xl:pt-36">
+                    <p class="text-xs">O firmie</p>
+                    <h1 class="text-[48px]">Tworzymy<br> z pasją</h1>
+                    <p class="pt-[40px] 2xl:pt-[80px]">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                    <button class="border border-slate-50 rounded-3xl p-3 mb-10 mt-10 md:mt-12 xl:mt-16 hover:scale-110 transition-all duration-500">Poznaj nas bliżej <i class="fa-solid fa-arrow-right ml-2"></i></button>
                 </div>
             </div>
         </div>
       </section>
 
       <section id="realizations" class="gallery">
-        <div class="p-24 xl:ml-20">
+        <div class="pt-28 pb-16 pl-20 xl:ml-20">
             <p class="realizations">Realizacje</p>
             <h1 class="text-[48px]">Nasze projekty</h1>
         </div>
@@ -182,32 +182,31 @@
       </section>
 
       <section id="contact" class="h-[478px] flex justify-center items-center">
-        <div class="flex flex-col md:flex-row justify-center items-center w-3/4 h-3/4 md:h-2/3 bg-green-900 text-slate-50">
-            <h1 class="text-[30px] md:text-[40px] text-center">Zostańmy w kontakcie! <br>Znajdziesz nas na <strong><i>Instagramie.</i></strong></h1>
-            <div class="flex flex-col justify-center pl-2 md:pl-20">
-                <p class="text-left">Śledź nasze<br> najnowsze realizacje!</p>
-                <button class="bg-slate-50 text-black pl-4 pr-4 pt-2 pb-2 mt-5 rounded-3xl hover:bg-slate-200 hover:scale-110 transition-all duration-500">Instagram</button>
-
+        <div class="flex flex-col md:flex-row justify-center items-center w-3/4 h-5/6 md:h-2/3 xl:w-[1040px] xl:h-[358px] bg-green-900 text-slate-50">
+            <h1 class="text-3xl pl-3 md:pl-10 md:text-[40px] text-left leading-[50px] xl:pt-4">Zostańmy w kontakcie! <br>Znajdziesz nas na <strong><i>Instagramie.</i></strong></h1>
+            <div class="flex flex-col justify-center pl-2 sm:pl-10 md:pl-20">
+                <p class="text-left pt-10 md:pr-10">Śledź nasze<br> najnowsze realizacje!</p>
+                <button class="bg-slate-50 text-black pl-4 pr-4 pt-2 pb-2 mt-5 rounded-3xl md:mr-10 hover:bg-slate-200 hover:scale-110 transition-all duration-500">Instagram</button>
             </div>
         </div>
       </section>
 
       <footer class="h-100% flex justify-center items-center bg-black pt-10 pb-10">
-        <div class="w-3/4">
-            <div class="flex justify-between w-full items-center mb-16">
+        <div class="w-3/4 xl:w-[1040px]">
+            <div class="flex justify-between w-full items-center pt-5 pb-16">
                 <img src="./images/FooterLogo.png" />
                 <div class="flex flex-col md:flex-row">
                     <p class="text-slate-50 p-5">Daj znać, co możemy dla Ciebie zrobić!</p>
-                    <button class="w-[208px] h-[50px] mt-2  pt-2 pb-2 pl-5 pr-5 text-slate-50 bg-green-900 rounded-3xl hover:scale-110 transition-all duration-500">Skontaktuj się z nami</button>
+                    <button class="w-[208px] h-[50px] mt-2 pt-2 lg:pt-2 pb-2 text-slate-50 bg-green-900 rounded-3xl hover:scale-110 transition-all duration-500">Skontaktuj się z nami</button>
                 </div>
             </div>
             <hr>
             <div class="flex flex-col xl:flex-row text-slate-50 justify-between">
                 <div class="flex pt-16">
-                    <button class="pr-5 xl:pr-10 hover:scale-110 transition-all duration-500">Kontakt</button>
-                    <button class="pr-5 xl:pr-10 hover:scale-110 transition-all duration-500">Instagram</button>
-                    <button class="pr-5 xl:pr-10 hover:scale-110 transition-all duration-500">Facebook</button>
-                    <button class="pr-5 xl:pr-10 hover:scale-110 transition-all duration-500">Linkedin</button>
+                    <button class="pr-3 md:pr-5 xl:pr-12 hover:scale-110 transition-all duration-500">Kontakt</button>
+                    <button class="pr-3 md:pr-5 xl:pr-12 hover:scale-110 transition-all duration-500">Instagram</button>
+                    <button class="pr-3 md:pr-5 xl:pr-12 hover:scale-110 transition-all duration-500">Facebook</button>
+                    <button class="pr-3 md:pr-5 xl:pr-12 hover:scale-110 transition-all duration-500">Linkedin</button>
                 </div>
                 <div class="flex pt-16">
                     <p>000-000-000</p>
@@ -216,7 +215,7 @@
             </div>
             <div class="flex flex-col md:flex-row text-slate-50 mt-20 md:mt-28 justify-between">
                 <p class="text-center">Prawa zastrzeżone &copy; 2022</p>
-                <div class="flex mt-5 justify-center">
+                <div class="flex justify-center">
                     <p>Made by</p>
                     <img src="./images/LightLogo.png" />
                 </div>

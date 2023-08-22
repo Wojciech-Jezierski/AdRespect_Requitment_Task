@@ -3,7 +3,7 @@ const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 const mobileMenuCloseButton = document.getElementById('mobile-menu-close-button');
 const body = document.querySelector('body');
-const offerBtn = document.querySelector('.offer');
+const offerBtn = document.querySelector('.nav-offer');
 const dropDownList = document.querySelector('.drop-down-list');
 
 mobileMenuButton.addEventListener('click', () => {
@@ -108,3 +108,6 @@ lightbox.addEventListener('click', e => {
   if (e.target !== e.currentTarget) return
   lightbox.classList.remove('active')
 })
+
+
+window.onload = initializeMasonry;
