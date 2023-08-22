@@ -2,7 +2,7 @@
 
 ## Techstack
 
-HTML, CSS, JavaScript, Tailwind CSS, Masonry.js, Font Awesome
+HTML, CSS, JavaScript, Tailwind CSS, Masonry.js, Font Awesome.
 
 ## Features
 
