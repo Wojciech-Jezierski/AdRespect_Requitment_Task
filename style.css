@@ -6,6 +6,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.dark-text-color {
+  color: #111111;
+}
+
+.bright-text-color {
+  color: #f5f0ec;
+}
+
+.green-text-color {
+  color: #1b5b31;
+}
+
+.header-button {
+  color: #1b5b31;
+  border: 1px solid #1b5b31;
+}
+
 .hero {
   background-color: #dcc1ab;
 }
@@ -32,6 +49,7 @@ hr {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  margin: -10px;
 }
 
 .grid-item {
@@ -81,12 +99,12 @@ hr {
   margin-bottom: 20px;
   padding: 8px 16px;
   background-color: none;
-  color: black;
+  color: #111111;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   border-radius: 1.5rem;
-  outline: 1px solid black;
+  outline: 1px solid #111111;
   opacity: 100%;
 }
 
@@ -121,7 +139,7 @@ hr {
   font-size: 2rem;
   bottom: 2px;
   transform: translateY(-50%);
-  color: black;
+  color: #111111;
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 0 1rem;
@@ -231,4 +249,8 @@ hr {
   height: 50%; /* Adjust the height as needed */
   background: linear-gradient(to top, #dcc1ab, transparent);
   z-index: 12;
+}
+
+.footer {
+  background-color: #111111;
 }
