@@ -49,7 +49,7 @@ hr {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin: -10px;
+  margin: 0px;
 }
 
 .grid-item {
